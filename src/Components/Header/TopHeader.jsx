@@ -3,7 +3,7 @@ import React from 'react'
 const TopHeader = () => {
   return (
     <>
-      <div className='flex gap-[100px] justify-center flex-wrap '>
+      <div className='flex gap-[100px] justify-center flex-wrap mt-[15px]'>
         <div className='flex gap[200px] flex-wrap'>
           <img src='https://amaranoc.am/images/logo.svg' />
         </div>
