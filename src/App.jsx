@@ -1,7 +1,8 @@
 import { useState } from 'react' 
 import './App.css' 
 import TopHeader from './Components/Header/TopHeader' 
-// import BodyAll from './Components/Body/BodyAll' 
+import BodyAll from './Components/BodyAll/BodyAll'
+
  
 function App() { 
  
@@ -9,7 +10,7 @@ function App() {
   return ( 
     <> 
         <TopHeader/> 
-        {/* <BodyAll/>  */}
+        <BodyAll/>
     </> 
   ) 
 } 
