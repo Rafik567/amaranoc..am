@@ -185,6 +185,7 @@ const BodyAll = () => {
                 title: "108,000 Դ", 
             }, 
         ]
+        const selectedData = dataBase.slice(0, 2);
     return (
         <>
 
