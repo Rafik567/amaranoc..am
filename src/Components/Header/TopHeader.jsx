@@ -1,30 +1,37 @@
-import React from 'react'
+import React from 'react';
 
 const TopHeader = () => {
   return (
-    <>
-      <div className='flex gap-[100px] justify-center flex-wrap mt-[15px]'>
-        <div className='flex gap[200px] flex-wrap'>
-          <img src='https://amaranoc.am/images/logo.svg' />
-        </div>
-        <div className='flex gap-[35px] mt-[20px] flex-wrap'>
-          <p>Գլխավոր</p>
-          <p>Զեղչեր</p>
-          <p>Ծառայություններ</p>
-          <p>Մեր մասին</p>
-        </div>
-        <div className='mt-[20px] flex gap-[45px]'>
-          <i className="fa fa-globe" style={{ fontSize: '24px' }}></i>
-          <i className="fa fa-male" style={{ fontSize: '24px' }}></i>
-        </div>
-        <div className='mt-[15px]   '>
-          <input className=' w-[250px] rounded-[20px] border-2 border-gray-300 p-[8px]' type="text" placeholder="Որոնում..." />
-        </div>
+    <div className='flex gap-[100px] flex-wrap justify-center mt-[15px] gap-y-[20px] md:gap-y-[10px]'>
+      <div className='flex justify-center gap-[50px] items-center'>
+        <img
+          src='https://amaranoc.am/images/logo.svg'
+          alt='Logo'
+          className='h-[50px] md:h-[40px]'
+        />
       </div>
 
+      <div className='flex gap-[30px] md:gap-[80px] mt-[20px] flex-wrap text-center'>
+        <p className='text-lg md:text-base'>Գլխավոր</p>
+        <p className='text-lg md:text-base'>Զեղչեր</p>
+        <p className='text-lg md:text-base'>Ծառայություններ</p>
+        <p className='text-lg md:text-base'>Մեր մասին</p>
+      </div>
 
-    </>
-  )
-}
+      <div className='flex gap-[25px] md:gap-[50px] items-center mt-[10px]'>
+        <i className='fa fa-globe text-2xl'></i>
+        <i className='fa fa-male text-2xl'></i>
+        
+      <div className=' w-full ml-[50px] flex justify-center'>
+        <input
+          className='w-[300px] md:w-[250px] rounded-[20px] border-2 border-gray-300 p-[8px] text-center'
+          type='text'
+          placeholder='Որոնում...'
+        />
+      </div>
+      </div>
+    </div>
+  );
+};
 
-export default TopHeader
+export default TopHeader;
