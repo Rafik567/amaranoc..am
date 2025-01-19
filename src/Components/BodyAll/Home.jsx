@@ -9,10 +9,10 @@ const Home = () => {
         {data.map((el) => (
           <div
             key={el.id}
-            className="flex flex-col items-center sm:w-[150px] md:w-[80px] w-[120px]">
+            className="flex flex-col items-center sm:w-[60px] md:w-[80px] w-[60px]">
             <img
               src={el.url}
-              className="image rounded-[10px] w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[120px] md:h-[120px]"
+              className="image rounded-[10px] w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[60px] md:h-[60px]"
               alt={el.text}
             />
             <p className="card-description text-[black] text-center mt-[10px] sm:text-[14px] md:text-[16px]">
@@ -21,7 +21,7 @@ const Home = () => {
           </div>
         ))}
         <i
-          className="fa fa-arrow-right mt-[65px] h-[39px] rounded-[20px] border-2 border-gray-300 p-[6px]"
+          className="fa fa-arrow-right mt-[35px] h-[39px] rounded-[20px] border-2 border-gray-300 p-[6px]"
           style={{ fontSize: "24px" }}
         ></i>
       </div>
