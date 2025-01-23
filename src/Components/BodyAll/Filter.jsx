@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../BodyAll/filter.css";
 
 const Filter = () => {
-  const [idBtn, setIdBtn] = useState(0);
+  const [idBtn, setIdBtn] = useState(null);
   let clickFun = (idBtn) => {
     setIdBtn(idBtn);
 
@@ -121,12 +121,12 @@ const Filter = () => {
               >
                 Բոլորը</button>
               <button onClick={() => clickFun(2)} className={`${idBtn === 2 ? "bg-black text-white" : "bg-gray-300 text-black"
-                } bg-gray-300 rounded-[30px] w-[80px] h-[50px] `}>
+                }  rounded-[30px] w-[80px] h-[50px] `}>
                 Այո
               </button>
             </div>
             <button onClick={() => clickFun(3)} className={`${idBtn === 3 ? "bg-black text-white" : "bg-gray-300 text-black"
-              } bg-gray-300 rounded-[30px] w-[70px] h-[50px] mt-[10px]`}>
+              }  rounded-[30px] w-[70px] h-[50px] mt-[10px]`}>
               Ոչ
             </button>
           </div>
@@ -155,20 +155,20 @@ const Filter = () => {
                   }`}
               >
                 Բոլորը</button>
-              <button onClick={() => clickFun(5)} className={`bg-gray-300 rounded-[30px] w-[50px] h-[50px] ${idBtn === 5 ? "bg-black text-white" : "bg-gray-300 text-black"
+              <button onClick={() => clickFun(5)} className={` rounded-[30px] w-[50px] h-[50px] ${idBtn === 5 ? "bg-black text-white" : "bg-gray-300 text-black"
                 } `}>1</button>
-              <button onClick={() => clickFun(6)} className={`bg-gray-300 rounded-[30px] w-[50px] h-[50px] ${idBtn === 6 ? "bg-black text-white" : "bg-gray-300 text-black"
+              <button onClick={() => clickFun(6)} className={` rounded-[30px] w-[50px] h-[50px] ${idBtn === 6 ? "bg-black text-white" : "bg-gray-300 text-black"
                 } `}>2</button>
             </div>
             <div className="flex flex-wrap gap-[15px] mt-[10px]">
-              <button onClick={() => clickFun(7)} className={`bg-gray-300 rounded-[30px] w-[50px] h-[50px] ${idBtn === 7 ? "bg-black text-white" : "bg-gray-300 text-black"
+              <button onClick={() => clickFun(7)} className={` rounded-[30px] w-[50px] h-[50px] ${idBtn === 7 ? "bg-black text-white" : "bg-gray-300 text-black"
                 } `}>3</button>
-              <button onClick={() => clickFun(8)} className={`bg-gray-300 rounded-[30px] w-[50px] h-[50px] ${idBtn === 8 ? "bg-black text-white" : "bg-gray-300 text-black"
+              <button onClick={() => clickFun(8)} className={` rounded-[30px] w-[50px] h-[50px] ${idBtn === 8 ? "bg-black text-white" : "bg-gray-300 text-black"
                 } `}>4</button>
-              <button onClick={() => clickFun(9)} className={`bg-gray-300 rounded-[30px] w-[50px] h-[50px] ${idBtn === 9 ? "bg-black text-white" : "bg-gray-300 text-black"
+              <button onClick={() => clickFun(9)} className={` rounded-[30px] w-[50px] h-[50px] ${idBtn === 9 ? "bg-black text-white" : "bg-gray-300 text-black"
                 } `}>5</button>
             </div>
-            <button onClick={() => clickFun(10)} className={`bg-gray-300 rounded-[30px] w-[110px] h-[50px] mt-[10px] ${idBtn === 10 ? "bg-black text-white" : "bg-gray-300 text-black"
+            <button onClick={() => clickFun(10)} className={` rounded-[30px] w-[110px] h-[50px] mt-[10px] ${idBtn === 10 ? "bg-black text-white" : "bg-gray-300 text-black"
               } `}>
               6 և ավելի
             </button>

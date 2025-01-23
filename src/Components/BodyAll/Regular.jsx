@@ -7,7 +7,7 @@ const Regular = () => {
     <div>
 
       <div className="mt-[30px]">
-        <b className="ml-[180px]">Սովորական առաջարկներ</b>
+        <b className="pl-[100px]">Սովորական առաջարկներ</b>
         <div className="flex justify-center mt-[10px] flex-wrap gap-[15px] sm:gap-[25px] ml-[40px]">
           {data6.map((el) => (
             <div key={el.id} className="flex flex-col  sm:w-[280px] md:w-[300px] w-[240px]">
