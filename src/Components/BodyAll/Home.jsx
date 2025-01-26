@@ -158,7 +158,7 @@ const Home = () => {
             <img
               src={el.url}
               alt={el.text}
-              className="image rounded-[10px] w-[80px] h-[80px] sm:w-[100px] sm:h-[100px] md:w-[60px] md:h-[60px] cursor-pointer"
+              className="image rounded-[10px] w-[80px] h-[80px] sm:w-[100px] sm:flex-wap sm:h-[100px] md:w-[60px] md:h-[60px] cursor-pointer"
               onClick={() => clickImg(el)} 
             />
             <p className="card-description text-[black] text-center mt-[10px] sm:text-[14px] md:text-[16px]">

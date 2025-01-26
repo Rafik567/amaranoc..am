@@ -18,11 +18,11 @@ const TopHeader = () => {
         <p className='text-lg md:text-base'>Մեր մասին</p>
       </div>
 
-      <div className='flex gap-[25px] md:gap-[50px] items-center mt-[10px]'>
+      <div className='flex gap-[25px] flex-wrap sm:flex-wrap md:gap-[50px] items-center mt-[10px]'>
         <i className='fa fa-globe text-2xl'></i>
         <i className='fa fa-male text-2xl'></i>
         
-      <div className=' w-full ml-[50px] flex justify-center'>
+      <div className=' w-full ml-[50px] flex   justify-center'>
         <input
           className='w-[300px] md:w-[250px] rounded-[20px] border-2 border-gray-300 p-[8px] text-center'
           type='text'

@@ -10,7 +10,7 @@ import Regular from "./Regular";
 const BodyAll = () => {
   return (
     <>
-      <div className="flex justify-center mt-[60px]">
+      <div className="flex justify-evenly mt-[60px]">
         <Filter />
         <div>
           <Map />

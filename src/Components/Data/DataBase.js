@@ -203,3 +203,88 @@ export let data8 = [
     title: "108,000 Դ",
   },
 ];
+export const dataRegion = [
+  { text: "Դիլիջան", id: 1 },
+  { text: "Ծաղկաձոր", id: 2 },
+  { text: "Երևան", id: 3 },
+  { text: "Ձորաղբյուր", id: 4 },
+  { text: "Արզնի", id: 5 },
+  { text: "Ջրվեժ", id: 6 },
+  { text: "Աշտարակ", id: 7 },
+  { text: "Նոր Հաճն", id: 8 },
+  { text: "Աբովյան", id: 9 },
+  { text: "Պտղնի", id: 10},
+  { text: "Սևան", id: 11},
+  { text: "Քասախ", id: 12},
+  { text: "Զովունի", id:13}
+];
+export const dataFeatures = [
+  { text: "Սպասք", id: 1 },
+  { text: "Լվացքի մեքենա", id: 2 },
+  { text: "Աման լվացող մեքենա", id: 3 },
+  { text: "Կայանատեղի", id: 4 },
+  { text: "Առանձին մուտք", id: 5 },
+  { text: "Բիլիարդ", id: 6 },
+  { text: "Մանղալ", id: 7 },
+  { text: "Կինոթատրոն", id: 8 },
+  { text: "Smart հեռուստացույց", id: 9 },
+  { text: "Վարսահարդարիչ", id: 10 },
+  { text: "Playstation", id: 11 }
+];
+export const arjeq = [
+  {
+    id: 1,
+    icon: "https://www.shutterstock.com/image-vector/armenian-dram-coin-monochrome-black-600nw-1675046068.jpg",
+    type: "image",
+    alt: "Armenian Dram"
+  },
+  {
+    id: 2,
+    icon: "fa fa-dollar",
+    type: "icon" 
+  },
+  {
+    id: 3,
+    icon: "fa fa-euro",
+    type: "icon"
+  },
+  {
+    id: 4,
+    icon: "fa fa-ruble",
+    type: "icon"
+  }
+];
+export const buttons = [
+  { id: 1, text: "Բոլորը", width: "110px" },
+  { id: 2, text: "Այո", width: "80px" },
+  { id: 3, text: "Ոչ", width: "70px" }
+];
+export const rooms = [
+  { id: 4, text: "Բոլորը", width: "110px" },
+  { id: 5, text: "1", width: "50px" },
+  { id: 6, text: "2", width: "50px" },
+  { id: 7, text: "3", width: "50px" },
+  { id: 8, text: "4", width: "50px" },
+  { id: 9, text: "5", width: "50px" },
+  { id: 10, text: "6 և ավելի", width: "110px" }
+];
+export const postData = [
+  {
+    id: 1,
+    type: "text",
+    placeholder: "Անուն Ազգանուն",
+    className: "bg-gray-9 rounded-[10px] w-[80%] sm:w-[300px] h-[50px]"
+  },
+  {
+    id: 2,
+    type: "number",
+    placeholder: "Հեռախոսահամար",
+    className: "rounded-[10px] w-[80%] sm:w-[300px] h-[50px]"
+  },
+  {
+    id: 3,
+    type: "email",
+    placeholder: "Էլ․ Հասցե",
+    className: "rounded-[10px] w-[80%] sm:w-[300px] h-[50px]"
+  }
+];
