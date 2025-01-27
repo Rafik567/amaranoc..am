@@ -3,7 +3,7 @@ import React from "react";
 const Map = () => {
   return (
     <>
-      <div className="ml-[60px] flex flex-wrap gap-[20px]">
+      <div className="pl-[130px] flex flex-wrap gap-[20px]">
         <button className="w-[180px] sm:w-[150px] md:w-[180px] rounded-[40px] border-2 border-gray-300 p-[8px]">
           Քարտեզ
         </button>

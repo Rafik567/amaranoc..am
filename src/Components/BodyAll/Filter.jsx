@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../BodyAll/filter.css";
-import { dataRegion, dataFeatures, arjeq,buttons,rooms } from "../Data/DataBase";
+import { dataRegion, dataFeatures, arjeq, buttons, rooms } from "../Data/DataBase";
 
 const Filter = () => {
 
@@ -17,13 +17,11 @@ const Filter = () => {
           <div className="filter-group max-h-[200px] overflow-y-auto p-2">
             <strong>Տարածաշրջան</strong>
             {dataRegion.map((el, id) => (
-              <div className="flex flex-wrap gap-[10px]">
-                <input type="checkbox" key={el.id} />
+              <div key={id} className="flex flex-wrap gap-[10px]">
+                <input type="checkbox" />
                 <span className="text-gray-400">{el.text}</span>
               </div>
-            )
-            )}
-
+            ))}
           </div>
           <hr />
 

@@ -25,7 +25,7 @@ const Home = () => {
       description: "Ծաղկաձոր",
       title: "108,000 Դ",
     },
-    
+
   ];
   let dataImg2 = [
     {
@@ -42,7 +42,7 @@ const Home = () => {
       description: "Ծաղկաձոր",
       title: "55,000 Դ",
     }
-    
+
   ];
   let dataImg3 = [
     {
@@ -52,7 +52,7 @@ const Home = () => {
       description: "Օհանավան",
       title: "100,000 Դ",
     }
-    
+
   ];
   let dataImg4 = [
     {
@@ -76,7 +76,7 @@ const Home = () => {
       description: "Ծաղկաձոր",
       title: "150,000 Դ",
     },
-    
+
   ];
   let dataImg5 = [
     {
@@ -100,7 +100,7 @@ const Home = () => {
       description: "Աշտարակ",
       title: "42,000 Դ",
     },
-    
+
   ];
   let dataImg6 = [
     {
@@ -124,76 +124,78 @@ const Home = () => {
       description: "Գառնի",
       title: "100,000 Դ",
     },
-    
+
   ];
-  const [img, setImg] = useState([]); 
+  const [img, setImg] = useState([]);
 
   const clickImg = (el) => {
     if (el.id === data[0].id) {
       setImg(dataImg);
-    }else if (el.id === data[1].id) {
+    } else if (el.id === data[1].id) {
       setImg(dataImg2);
-    }else if (el.id === data[2].id) {
+    } else if (el.id === data[2].id) {
       setImg(dataImg3);
-    }else if (el.id === data[3].id) {
+    } else if (el.id === data[3].id) {
       setImg(dataImg4);
-    }else if (el.id === data[4].id) {
+    } else if (el.id === data[4].id) {
       setImg(dataImg5);
-    }else if (el.id === data[5].id) {
+    } else if (el.id === data[5].id) {
       setImg(dataImg6);
     }
-     else {
+    else {
       setImg([]);
     }
   };
 
   return (
     <>
-      <div className="flex ml-[60px] justify-center mt-[10px] flex-wrap gap-[15px] sm:gap-[90px]">
-        {data.map((el) => (
-          <div
-            key={el.id}
-            className="flex flex-col items-center sm:w-[60px] md:w-[80px] w-[60px]"
-          >
-            <img
-              src={el.url}
-              alt={el.text}
-              className="image rounded-[10px] w-[80px] h-[80px] sm:w-[100px] sm:flex-wap sm:h-[100px] md:w-[60px] md:h-[60px] cursor-pointer"
-              onClick={() => clickImg(el)} 
-            />
-            <p className="card-description text-[black] text-center mt-[10px] sm:text-[14px] md:text-[16px]">
-              {el.text}
-            </p>
-          </div>
-        ))}
-        <i
-          className="fa fa-arrow-right mt-[35px] h-[39px] rounded-[20px] border-2 border-gray-300 p-[6px]"
-          style={{ fontSize: "24px" }}
-        ></i>
-      </div>
-
-      {img.length > 0 && (
-        <div className="image-gallery mt-[20px]">
-          <div className="flex justify-center flex-wrap gap-[15px]">
-            {img.map((item) => (
-              <div key={item.id} className="flex flex-col ">
-                <img
-                  src={item.image}
-                  alt={item.description}
-                  className="image rounded-[10px] w-[240px] h-[200px] sm:w-[280px] sm:h-[240px] md:w-[300px] md:h-[260px]"
-                />
-                <p className="text-[black]  mt-[10px] sm:text-[14px] md:text-[16px]">
-                  {item.description}
-                </p>
-                <p className="text-[black]  mt-[5px] sm:text-[16px] md:text-[18px] font-bold">
-                  {item.title}
-                </p>
-              </div>
-            ))}
-          </div>
+       <div className="flex justify-center mt-10 flex-wrap gap-4 sm:gap-12">
+      {data.map((el) => (
+        <div
+          key={el.id}
+          className="flex flex-col items-center w-20 sm:w-24 md:w-20"
+        >
+          <img
+            src={el.url}
+            alt={el.text}
+            className="image rounded-lg w-20 h-20 sm:w-24 sm:h-24 md:w-16 md:h-16 cursor-pointer"
+            onClick={() => clickImg(el)}
+          />
+          <p className="text-black text-center mt-2 sm:text-sm md:text-base">
+            {el.text}
+          </p>
         </div>
-      )}
-      
+      ))}
+      <i
+        className="fa fa-arrow-right mt-9 h-10 rounded-2xl border-2 border-gray-300 p-1"
+        style={{ fontSize: "24px" }}
+      ></i>
+    </div>
+
+    {img.length > 0 && (
+      <div className="image-gallery mt-5">
+        <div className="flex justify-center flex-wrap gap-4">
+          {img.map((item) => (
+            <div
+              key={item.id}
+              className="flex flex-col w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4"
+            >
+              <img
+                src={item.image}
+                alt={item.description}
+                className="rounded-lg w-full h-48 sm:h-60 md:h-64"
+              />
+              <p className="text-black mt-2 sm:text-sm md:text-base">
+                {item.description}
+              </p>
+              <p className="text-black mt-1 sm:text-base md:text-lg font-bold">
+                {item.title}
+              </p>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
     </>
   );
 };

@@ -2,7 +2,8 @@ import React from 'react';
 
 const TopHeader = () => {
   return (
-    <div className='flex gap-[100px] flex-wrap justify-center mt-[15px] gap-y-[20px] md:gap-y-[10px]'>
+    <div className='flex flex-col md:flex-row gap-[100px] flex-wrap justify-center mt-[15px] gap-y-[20px] md:gap-y-[10px]'>
+
       <div className='flex justify-center gap-[50px] items-center'>
         <img
           src='https://amaranoc.am/images/logo.svg'
@@ -18,17 +19,16 @@ const TopHeader = () => {
         <p className='text-lg md:text-base'>Մեր մասին</p>
       </div>
 
-      <div className='flex gap-[25px] flex-wrap sm:flex-wrap md:gap-[50px] items-center mt-[10px]'>
+      <div className='flex gap-[25px] flex-wrap sm:flex-wrap md:gap-[50px] items-center mt-[10px] justify-center'>
         <i className='fa fa-globe text-2xl'></i>
         <i className='fa fa-male text-2xl'></i>
-        
-      <div className=' w-full ml-[50px] flex   justify-center'>
+      </div>
+      <div className=' flex justify-center mt-[10px]'>
         <input
-          className='w-[300px] md:w-[250px] rounded-[20px] border-2 border-gray-300 p-[8px] text-center'
+          className='w-[300px]  md:w-[250px] rounded-[20px] border-2 border-gray-300 p-[8px] text-center'
           type='text'
           placeholder='Որոնում...'
         />
-      </div>
       </div>
     </div>
   );
