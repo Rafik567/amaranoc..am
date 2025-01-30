@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { data } from "../Data/DataBase";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 import "../BodyAll/filter.css";
 
 const Home = () => {
@@ -146,21 +149,33 @@ const Home = () => {
       setImg([]);
     }
   };
-
+  // const settings = {
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow:1,
+  //   slidesToScroll: 1, 
+  //   centerMode: true, 
+  //   focusOnSelect: true, 
+  // };
   return (
     <>
-       <div className="flex justify-center mt-10 flex-wrap gap-4 sm:gap-12">
+
+       <div className="flex justify-center mt-10 flex-wrap gap-1 sm:gap-12">
+
       {data.map((el) => (
         <div
-          key={el.id}
-          className="flex flex-col items-center w-20 sm:w-24 md:w-20"
+        key={el.id}
+        className="flex flex-col items-center w-20 sm:w-24 md:w-20"
         >
+    
           <img
             src={el.url}
             alt={el.text}
-            className="image rounded-lg w-20 h-20 sm:w-24 sm:h-24 md:w-16 md:h-16 cursor-pointer"
+            className="image rounded-lg w-20 h-20 sm:w-10 sm:h-10 md:w-10 md:h-10 cursor-pointer"
             onClick={() => clickImg(el)}
-          />
+            />
+          
           <p className="text-black text-center mt-2 sm:text-sm md:text-base">
             {el.text}
           </p>
@@ -169,7 +184,7 @@ const Home = () => {
       <i
         className="fa fa-arrow-right mt-9 h-10 rounded-2xl border-2 border-gray-300 p-1"
         style={{ fontSize: "24px" }}
-      ></i>
+        ></i>
     </div>
 
     {img.length > 0 && (
