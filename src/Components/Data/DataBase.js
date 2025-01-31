@@ -288,3 +288,69 @@ export const postData = [
     className: "rounded-[10px] w-[80%] sm:w-[300px] h-[50px]"
   }
 ];
+export let dataCara = [
+  {
+    id: 1,
+    url: "https://api.amaranoc.am/service.svg",
+    text: "Սպասարկում",
+  },
+  {
+    id: 2,
+    url: "https://api.amaranoc.am/services1.svg",
+    text: "Շոու",
+  },
+  {
+    id: 3,
+    url: "https://api.amaranoc.am/services2.svg",
+    text: "Միջոցառումներ",
+  },
+  {
+    id: 4,
+    url: "https://api.amaranoc.am/services3.svg",
+    text: "Տեխնիկա",
+  },
+  {
+    id: 5,
+    url: "https://api.amaranoc.am/services4.svg",
+    text: "Օրավարձով գույք",
+  },
+  {
+    id: 6,
+    url: "https://api.amaranoc.am/services5.svg",
+    text: "Նկարահանում",
+  },
+];
+export let dataTesak = [
+  {
+    id: 1,
+    image:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2F1724331775249--0.16594454212797016image.webp&w=1920&q=75",
+    description: "Յուրաքանյչուր մատուցող կարող է սպասարկել 15-20 անձի։ Ծառայության արժեքը կախված է միջոցառման անցկացման վայրից։ Ձեր միջոցառման կազմակերպման գործում Ձեզ",
+    title: "Մատուցող",
+    price:"20,000 ֏"
+  },
+  {
+    id: 2,
+    image:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2F1724330468263--0.5829426973721912image.webp&w=1920&q=75",
+    description: "Մեր պրոֆեսիոնալ բարմենները տիրապետում են տարբեր տեսակի խմիչքների պատրաստման հմտություններին։ Մեր բարմենները պատասխանատու են բարում նստած հաճախորդներին ",
+    title:"Բարմեն",
+    price:"25,000 ֏"
+  },
+  {
+    id: 3,
+    image:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2F1724331582281--0.8016246618454268image.webp&w=1920&q=75",
+    description: "Արժեքը կախված է միջոցառման անձանց քանակից և ուտեստների մենյուից։ Ունենալով հարուստ փորձ և տաղանդ, Մեր խոհարարները ստեղծում են համերի և նրբաճաշակության ",
+    title: "Խոհարար",
+    price:"35,000 ֏"
+  },
+  {
+    id: 4,
+    image:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2F1724346434036--0.5362400594372552image.webp&w=1920&q=75",
+    description: "Այս բաժնում մենք կփորձենք օգնել Ձեզ հանդիսավարի (թամադայի), ընտրության հարցում, քանի որ միայն իսկական հանդիսավարը կարող է իր վարպետությամբ ստեղծել հիասքանչ և տոնական մթնոլորտ։ ",
+    title: "Հանդիսավար",
+    price:"60,000 ֏"
+  },
+];

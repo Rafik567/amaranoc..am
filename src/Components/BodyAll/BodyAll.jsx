@@ -19,7 +19,7 @@ const BodyAll = () => {
             <Home />
           </div>
           <BestOffers />
-          <Regular />
+          <Regular /> 
         </div>
       </div>
     </>
