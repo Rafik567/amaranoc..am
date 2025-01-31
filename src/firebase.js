@@ -8,7 +8,7 @@ const firebaseConfig = {
   storageBucket: "myamaranoc.firebasestorage.app",
   messagingSenderId: "862210045731",
   appId: "1:862210045731:web:7ff3fa8b37fab2f037fe96",
-  measurementId: "G-Z8Y5JRKHE5"
+  measurementId: "G-Z8Y5JRKHE5",
 };
 
 const app = initializeApp(firebaseConfig);

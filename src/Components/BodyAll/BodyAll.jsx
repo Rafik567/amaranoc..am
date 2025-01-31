@@ -7,19 +7,18 @@ import BestOffers from "./BestOffers";
 import Regular from "./Regular";
 import Filter from "../BodyAll/Filter";
 
-
 const BodyAll = () => {
   return (
     <>
       <div className="flex justify-evenly mt-[60px]">
-<Filter/>
+        <Filter />
         <div>
           <Map />
           <div>
             <Home />
           </div>
           <BestOffers />
-          <Regular /> 
+          <Regular />
         </div>
       </div>
     </>

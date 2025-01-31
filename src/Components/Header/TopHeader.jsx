@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom"; 
+import { Link } from "react-router-dom";
 
 const TopHeader = () => {
   const [showLanguages, setShowLanguages] = useState(false);
@@ -15,9 +15,7 @@ const TopHeader = () => {
       </div>
 
       <div className="flex gap-[30px] md:gap-[80px] mt-[20px] flex-wrap text-center">
-        <p>
-          Գլխավոր
-        </p>
+        <Link to="/"> Գլխավոր</Link>
 
         <p className="text-lg md:text-base">Զեղչեր</p>
         <Link
@@ -34,14 +32,18 @@ const TopHeader = () => {
           className="fa fa-globe text-2xl cursor-pointer"
           onClick={() => setShowLanguages((prev) => !prev)}
         ></i>
-        <i
-          className="fa fa-male text-2xl cursor-pointer"></i>
-
+        <Link to="/login">
+          <i className="fa fa-male text-2xl cursor-pointer"></i>
+        </Link>
         {showLanguages && (
           <div className="absolute top-10 right-0 bg-white shadow-md rounded-md p-2 w-[150px]">
             <ul className="text-black">
-              <li className="cursor-pointer hover:bg-gray-200 p-1">🇦🇲 Հայերեն</li>
-              <li className="cursor-pointer hover:bg-gray-200 p-1">🇷🇺 Русский</li>
+              <li className="cursor-pointer hover:bg-gray-200 p-1">
+                🇦🇲 Հայերեն
+              </li>
+              <li className="cursor-pointer hover:bg-gray-200 p-1">
+                🇷🇺 Русский
+              </li>
               <li className="cursor-pointer hover:bg-gray-200 p-1"> English</li>
             </ul>
 
