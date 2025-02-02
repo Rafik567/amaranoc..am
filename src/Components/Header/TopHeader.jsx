@@ -5,48 +5,38 @@ const TopHeader = () => {
   const [showLanguages, setShowLanguages] = useState(false);
 
   return (
-    <div className="flex flex-col md:flex-row gap-[100px] flex-wrap justify-center mt-[15px] gap-y-[20px] md:gap-y-[10px]">
-      <div className="flex justify-center gap-[50px] items-center">
+    <div className="flex flex-col md:flex-row items-center justify-evenly px-4 py-3  w-full bg-white">
+      <div className="flex items-center">
         <img
           src="https://amaranoc.am/images/logo.svg"
           alt="Logo"
-          className="h-[50px] md:h-[40px]"
+          className="h-[40px] md:h-[50px]"
         />
       </div>
 
-      <div className="flex gap-[30px] md:gap-[80px] mt-[20px] flex-wrap text-center">
-        <Link to="/"> Գլխավոր</Link>
-
-        <p className="text-lg md:text-base">Զեղչեր</p>
-        <Link
-          to="/services"
-          className="text-lg md:text-base cursor-pointer hover:text-blue-500"
-        >
-          Ծառայություններ
-        </Link>
-        <p className="text-lg md:text-base">Մեր մասին</p>
+      <div className="hidden md:flex gap-8 text-lg">
+        <Link to="/" className="hover:text-blue-500">Գլխավոր</Link>
+        <p className="hover:text-blue-500 cursor-pointer">Զեղչեր</p>
+        <Link to="/services" className="hover:text-blue-500">Ծառայություններ</Link>
+        <p className="hover:text-blue-500 cursor-pointer">Մեր մասին</p>
       </div>
 
-      <div className="flex gap-[25px] flex-wrap sm:flex-wrap md:gap-[50px] items-center mt-[10px] justify-center relative">
+      <div className="flex items-center gap-6 relative">
         <i
           className="fa fa-globe text-2xl cursor-pointer"
           onClick={() => setShowLanguages((prev) => !prev)}
         ></i>
         <Link to="/login">
-          <i className="fa fa-male text-2xl cursor-pointer"></i>
+          <i className="fa fa-user text-2xl cursor-pointer"></i>
         </Link>
+
         {showLanguages && (
           <div className="absolute top-10 right-0 bg-white shadow-md rounded-md p-2 w-[150px]">
             <ul className="text-black">
-              <li className="cursor-pointer hover:bg-gray-200 p-1">
-                🇦🇲 Հայերեն
-              </li>
-              <li className="cursor-pointer hover:bg-gray-200 p-1">
-                🇷🇺 Русский
-              </li>
-              <li className="cursor-pointer hover:bg-gray-200 p-1"> English</li>
+              <li className="cursor-pointer hover:bg-gray-200 p-1">🇦🇲 Հայերեն</li>
+              <li className="cursor-pointer hover:bg-gray-200 p-1">🇷🇺 Русский</li>
+              <li className="cursor-pointer hover:bg-gray-200 p-1">English</li>
             </ul>
-
             <button
               className="mt-2 w-full bg-red-500 text-white p-1 rounded-md hover:bg-red-600"
               onClick={() => setShowLanguages(false)}
@@ -56,14 +46,16 @@ const TopHeader = () => {
           </div>
         )}
       </div>
-
-      <div className="flex justify-center mt-[10px]">
+      <div className="hidden md:flex">
         <input
-          className="w-[300px] md:w-[250px] rounded-[20px] border-2 border-gray-300 p-[8px] text-center"
+          className="w-[250px] rounded-full border-2 border-gray-300 p-2 "
           type="text"
           placeholder="Որոնում..."
         />
       </div>
+
+
+      
     </div>
   );
 };

@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <>
       <BodyAll />
-      <Post />
+      <Post/>
     </>
   );
 };

@@ -18,6 +18,7 @@ function App() {
         <Route path="/services" element={<Carayutyuner />} />
         <Route path="/login" element={<Login />} />
       </Routes>
+      
       <Footer />
     </Router>
   );
