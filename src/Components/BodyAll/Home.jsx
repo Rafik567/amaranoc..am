@@ -34,35 +34,7 @@ const Home = () => {
       setImg([]);
     }
   };
-  // const settings = {
-  //   dots: true,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 3,
-  //   slidesToScroll: 1,
-  //   centerMode: true,
-  //   focusOnSelect: true,
-  //   responsive: [
-  //     {
-  //       breakpoint: 1024,
-  //       settings: {
-  //         slidesToShow: 3,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 600,
-  //       settings: {
-  //         slidesToShow: 2,
-  //       },
-  //     },
-  //     {
-  //       breakpoint: 480,
-  //       settings: {
-  //         slidesToShow: 1,
-  //       },
-  //     },
-  //   ],
-  // };
+
   return (
     <>
       <div className="flex justify-center mt-10 flex-wrap gap-1 sm:gap-12">
@@ -98,7 +70,7 @@ const Home = () => {
                 className="flex flex-col w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4"
               >
                 <img
-                  src={item.image}
+                  src={item.image1}
                   alt={item.description}
                   className="rounded-lg object-cover"
                 />

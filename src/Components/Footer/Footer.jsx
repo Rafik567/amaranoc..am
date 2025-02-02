@@ -21,7 +21,7 @@ const Footer = () => {
       </div>
 
       <div className="text-center mt-6 text-[16px] sm:text-[20px]">
-        <a href="#" className="hover:text-gray-400">Գաղտնիության քաղաքականություն</a>
+        <a href="" className="hover:text-gray-400">Գաղտնիության քաղաքականություն</a>
       </div>
 
       <div className="mt-10">

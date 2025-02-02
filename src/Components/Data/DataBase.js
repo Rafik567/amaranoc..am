@@ -63,7 +63,7 @@ export const dataBase = [
     image3:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1736264307374--0.692906081502914image.webp&w=1920&q=75",
     image2:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1736264307372--0.5923133238359417image.webp&w=1920&q=75",
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1736264307379--0.38863366588149684image.webp&w=1920&q=75",
     description: "Ծաղկաձոր",
     icon: '<i class="fa fa-map-marker" style="font-size:24px"></i>',
     title: "45,000 Դ",
@@ -86,8 +86,8 @@ export let data2 = [
     image1:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735309341998--0.18031243054065027image.webp&w=1920&q=75",
     image2:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735309341998--0.18031243054065027image.webp&w=1920&q=75",
-    image3: "",
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1737545409557--0.3434726795825285image.webp&w=1920&q=75",
+    image3: "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735139871491--0.7825226005490338image.webp&w=1920&q=75",
     description: "Արզական",
     title: "60,000",
   },
@@ -98,7 +98,7 @@ export let data2 = [
     image3:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1731076889190--0.1412159534000028image.webp&w=1920&q=75",
     image2:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735307864481--0.8688546137086155image.webp&w=1920&q=75",
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1737545409585--0.48229779135214956image.webp&w=1920&q=75",
     description: "Քասախ",
     title: "120,000 Դ",
   },
@@ -106,77 +106,106 @@ export let data2 = [
 export let data3 = [
   {
     id: 1,
-    image:
+    image1:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735305286415--0.799977604430975image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735305286460--0.07116899535707355image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735305286520--0.8993426466469785image.webp&w=1920&q=75",
     description: "Դիլիջան",
     title: "25,000 Դ",
   },
   {
     id: 2,
-    image:
+    image1:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735302502215--0.230355006263677image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735309342080--0.8206555356980216image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735309342813--0.33308176130582123image.webp&w=1920&q=75",
     description: "Վանաձոր",
     title: "30,000",
   },
   {
     id: 3,
-    image:
+    image1:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735210751295--0.852475450909614image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735210751336--0.11280075081278595image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735210751347--0.1839402810683235image.webp&w=1920&q=75",
     description: "Թեղենիք",
     title: "25,000 Դ",
   },
 ];
 export let data4 = [
+  
   {
     id: 1,
-    image:
+    image1:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735139871431--0.24029398091295828image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735305286440--0.8571705092666544image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735305286456--0.017850288752115473image.webp&w=1920&q=75",
     description: "Դիլիջան",
     title: "50,000 Դ",
   },
   {
     id: 2,
-    image:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735208216849--0.48038698225258836image.webp&w=1920&q=75",
+    image1:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735309342783--0.9760529899064709image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1737545409557--0.3434726795825285image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735309342752--0.004481010974716648image.webp&w=1920&q=75",
     description: "Փարպի",
     title: "100,000 Դ",
   },
   {
     id: 3,
-    image:
+    image1:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735135057801--0.6317828904538976image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1736264307377--0.7851958827390857image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1736264307380--0.05146765724390012image.webp&w=1920&q=75",
     description: "Աբովյան",
     title: "55,000 Դ",
-  },
-];
-export let data5 = [
-  {
-    id: 1,
-    image:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1734367997011--0.42441673023022153image.webp&w=1920&q=75",
-    description: "Երևան",
-    title: "100,000 Դ",
   },
 ];
 export const data6 = [
   {
     id: 2,
     title: "90,000 Դ",
-    image:
+    image1:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735922464540--0.9832742505384362image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735922464548--0.9200362262498665image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735922464529--0.6869664694587136image.webp&w=1920&q=75",
+      
     description: "Ակունք",
   },
   {
     id: 3,
-    image:
+    image1:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1719483738178--0.17939100328131374image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1719483738180--0.6434175033868983image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1719483738191--0.1326786566723197image.webp&w=1920&q=75",
     title: "150,000 Դ",
     description: "Արզնի",
   },
   {
     id: 4,
-    image:
+    image1:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1727006467456--0.9643954207029866image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726751105725--0.7220711625112image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726751105729--0.24303973078560226image.webp&w=1920&q=75",
     title: "130,000 Դ",
     description: "Ծաղկաձոր",
   },
@@ -185,22 +214,34 @@ export let data7 = [
   {
     id: 1,
     description: "Բջնի",
-    image:
+    image1:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1718982997805--0.5443030491298497image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1719904417425--0.6539789619607399image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1719904417431--0.23434882756402398image.webp&w=1920&q=75",
     title: "90,000 Դ",
   },
   {
     id: 2,
     description: "Պտղնի",
-    image:
+    image1:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1733690961413--0.3657082475795794image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1733690961421--0.3667171563938947image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1733690961447--0.38353416019803177image.webp&w=1920&q=75",
     title: "100,000 Դ",
   },
   {
     id: 3,
     description: "Օհանավան",
-    image:
+    image1:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1712567462741--0.9299629007114927image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1712567462746--0.3136007336572648image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1712567462749--0.38886628944383816image.webp&w=1920&q=75",
     title: "80,000 Դ",
   },
 ];
@@ -208,22 +249,34 @@ export let data8 = [
   {
     id: 1,
     description: "Ծաղկաձոր",
-    image:
+    image1:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726755455709--0.42990686786537236image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726755455665--0.9767541947953513image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1718628350198--0.58103336918447image.webp&w=1920&q=75",
     title: "100,000 Դ",
   },
   {
     id: 2,
     description: "Օհանավան",
-    image:
+    image1:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1720431645306--0.9258848613459756image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1720431645286--0.9281730204740335image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1720431645298--0.1531032070465983image.webp&w=1920&q=75",
     title: "100,000 Դ",
   },
   {
     id: 3,
     description: "Նօր Հաճն",
-    image:
+    image1:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1712326262412--0.25440242535580326image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1713190213135--0.12751309620072693image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726751105740--0.02438617157514411image.webp&w=1920&q=75",
     title: "108,000 Դ",
   },
 ];
@@ -386,22 +439,34 @@ export let dataTesak = [
 export let dataImg = [
   {
     id: 1,
-    image:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1720431645306--0.9258848613459756image.webp&w=1920&q=75",
+    image1:
+    "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1712567462741--0.9299629007114927image.webp&w=1920&q=75",
+    image2:
+    "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1712567462746--0.3136007336572648image.webp&w=1920&q=75",
+    image3:
+    "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1712567462749--0.38886628944383816image.webp&w=1920&q=75",
     description: "Օհանավան",
     title: "100,000 Դ",
   },
   {
     id: 2,
-    image:
+    image1:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1712326262412--0.25440242535580326image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1713190213135--0.12751309620072693image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726751105740--0.02438617157514411image.webp&w=1920&q=75",
     description: "Նոր Հաճն",
     title: "108,000 Դ",
   },
   {
     id: 3,
-    image:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1727006467456--0.9643954207029866image.webp&w=1920&q=75",
+    image1:
+    "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726755455709--0.42990686786537236image.webp&w=1920&q=75",
+    image2:
+    "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726755455665--0.9767541947953513image.webp&w=1920&q=75",
+    image3:
+    "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1718628350198--0.58103336918447image.webp&w=1920&q=75",
     description: "Ծաղկաձոր",
     title: "108,000 Դ",
   },
@@ -409,15 +474,23 @@ export let dataImg = [
 export let dataImg2 = [
   {
     id: 1,
-    image:
+    image1:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1712567462741--0.9299629007114927image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1712567462746--0.3136007336572648image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1712567462749--0.38886628944383816image.webp&w=1920&q=75",
     description: "Օհանավան",
     title: "80,000 Դ",
   },
   {
     id: 2,
-    image:
+    image1:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1728404685454--0.08138957718142104image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726747526793--0.5511465752300848image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726747526756--0.7690820315569367image.webp&w=1920&q=75",
     description: "Ծաղկաձոր",
     title: "55,000 Դ",
   },
@@ -425,8 +498,12 @@ export let dataImg2 = [
 export let dataImg3 = [
   {
     id: 1,
-    image:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1720431645306--0.9258848613459756image.webp&w=1920&q=75",
+    image1:
+    "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1720431645306--0.9258848613459756image.webp&w=1920&q=75",
+    image2:
+    "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1720431645286--0.9281730204740335image.webp&w=1920&q=75",
+    image3:
+    "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1720431645298--0.1531032070465983image.webp&w=1920&q=75",
     description: "Օհանավան",
     title: "100,000 Դ",
   },
@@ -434,22 +511,34 @@ export let dataImg3 = [
 export let dataImg4 = [
   {
     id: 1,
-    image:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1732618649989--0.49688815022164445image.webp&w=1920&q=75",
+    image1:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1727006467456--0.9643954207029866image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726751105725--0.7220711625112image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726751105729--0.24303973078560226image.webp&w=1920&q=75",
     description: "Ծաղկաձոր",
     title: "120,000 Դ",
   },
   {
     id: 2,
-    image:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1733690961413--0.3657082475795794image.webp&w=1920&q=75",
+    image1:
+    "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1733690961413--0.3657082475795794image.webp&w=1920&q=75",
+    image2:
+    "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1733690961421--0.3667171563938947image.webp&w=1920&q=75",
+    image3:
+    "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1733690961447--0.38353416019803177image.webp&w=1920&q=75",
     description: "Պտղնի",
     title: "100,000 Դ",
   },
   {
     id: 3,
-    image:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1737199582170--0.3679310183692286image.webp&w=1920&q=75",
+    image1:
+    "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726755455709--0.42990686786537236image.webp&w=1920&q=75",
+    image2:
+    "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726755455665--0.9767541947953513image.webp&w=1920&q=75",
+    image3:
+    "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1718628350198--0.58103336918447image.webp&w=1920&q=75",
     description: "Ծաղկաձոր",
     title: "150,000 Դ",
   },
@@ -457,22 +546,34 @@ export let dataImg4 = [
 export let dataImg5 = [
   {
     id: 1,
-    image:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726751105725--0.7220711625112image.webp&w=1920&q=75",
+    image1:
+    "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1727006467456--0.9643954207029866image.webp&w=1920&q=75",
+    image2:
+    "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726751105725--0.7220711625112image.webp&w=1920&q=75",
+    image3:
+    "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726751105729--0.24303973078560226image.webp&w=1920&q=75",
     description: "Ծաղկաձոր",
     title: "130,000 Դ",
   },
   {
     id: 2,
-    image:
+    image1:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1719483738178--0.17939100328131374image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1719483738180--0.6434175033868983image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1719483738191--0.1326786566723197image.webp&w=1920&q=75",
     description: "Արզնի",
     title: "144,000 Դ",
   },
   {
     id: 3,
-    image:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1737468593100--0.7540007009174476image.webp&w=1920&q=75",
+    image1:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1718968770292--0.5365023927093644image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1719990732842--0.9878885381733362image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1719990732845--0.3129676442909646image.webp&w=1920&q=75",
     description: "Աշտարակ",
     title: "42,000 Դ",
   },
@@ -480,22 +581,33 @@ export let dataImg5 = [
 export let dataImg6 = [
   {
     id: 1,
-    image:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1728404685454--0.08138957718142104image.webp&w=1920&q=75",
+    image1:
+    "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1728404685454--0.08138957718142104image.webp&w=1920&q=75",
+    image2:
+    "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726747526793--0.5511465752300848image.webp&w=1920&q=75",
+    image3:
+    "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726747526756--0.7690820315569367image.webp&w=1920&q=75",
     description: "Ծաղկաձոր",
     title: "55,000 Դ",
   },
   {
     id: 2,
-    image:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726150949440--0.9147181144093686image.webp&w=1920&q=75",
-    description: "Նոր Հաճն",
+    image1:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1712326262412--0.25440242535580326image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1713190213135--0.12751309620072693image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726751105740--0.02438617157514411image.webp&w=1920&q=75",
     title: "80,000 Դ",
   },
   {
     id: 3,
-    image:
+    image1:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1725102025406--0.6174094950158759image.webp&w=1920&q=75",
+      image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1725102025409--0.9372360673860607image.webp&w=1920&q=75",
+      image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1725102025410--0.031797465758982346image.webp&w=1920&q=75",
     description: "Գառնի",
     title: "100,000 Դ",
   },
