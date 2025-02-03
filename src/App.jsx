@@ -8,6 +8,8 @@ import Carayutyuner from "./Components/Page/Carayutyuner";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Components/Page/Home";
 import Login from "./Components/Page/Login";
+import DisCount from "./Components/Page/DisCount";
+import About from "./Components/Page/About";
 
 function App() {
   return (
@@ -18,6 +20,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Carayutyuner />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/discount" element={ <DisCount/>} />
+        <Route path="/about" element={ <About/>} />
+
+
       </Routes>
       
       <Footer />
@@ -26,3 +32,4 @@ function App() {
 }
 
 export default App;
+ 

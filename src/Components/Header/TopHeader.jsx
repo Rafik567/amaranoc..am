@@ -16,9 +16,9 @@ const TopHeader = () => {
 
       <div className="hidden md:flex gap-8 text-lg">
         <Link to="/" className="hover:text-blue-500">Գլխավոր</Link>
-        <p className="hover:text-blue-500 cursor-pointer">Զեղչեր</p>
+        <Link to="/discount" className="hover:text-blue-500 cursor-pointer">Զեղչեր</Link>
         <Link to="/services" className="hover:text-blue-500">Ծառայություններ</Link>
-        <p className="hover:text-blue-500 cursor-pointer">Մեր մասին</p>
+        <Link to="/about" className="hover:text-blue-500 cursor-pointer">Մեր մասին</Link>
       </div>
 
       <div className="flex items-center gap-6 relative">
