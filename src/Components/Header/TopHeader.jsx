@@ -3,6 +3,12 @@ import { Link } from "react-router-dom";
 
 const TopHeader = () => {
   const [showLanguages, setShowLanguages] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false); // Մոդալի բացման վիճակ
+  const [cartItems, setCartItems] = useState([]); // Թարմացվող բասկետ
+
+  const handleBasketClick = () => {
+    setIsModalOpen(!isModalOpen); // Սեղմելուց մոդալը բացվում կամ փակվում
+  };
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-evenly px-4 py-3  w-full bg-white">
@@ -22,6 +28,8 @@ const TopHeader = () => {
       </div>
 
       <div className="flex items-center gap-6 relative">
+        <i className="fa fa-shopping-basket text-2xl cursor-pointer" onClick={handleBasketClick}></i> {/* Սեղմելիս բացվում է մոդալ */}
+
         <i
           className="fa fa-globe text-2xl cursor-pointer"
           onClick={() => setShowLanguages((prev) => !prev)}
@@ -46,6 +54,7 @@ const TopHeader = () => {
           </div>
         )}
       </div>
+
       <div className="hidden md:flex">
         <input
           className="w-[250px] rounded-full border-2 border-gray-300 p-2 "
@@ -54,8 +63,31 @@ const TopHeader = () => {
         />
       </div>
 
-
-      
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center z-50">
+          <div className="bg-white p-4 rounded-lg w-96">
+            <h2 className="text-xl font-bold mb-4">Ընտրած ապրանքներ</h2>
+            <div className="space-y-2">
+              {cartItems.length === 0 ? (
+                <p>Բասկետը դատարկ է։</p>
+              ) : (
+                cartItems.map((item, index) => (
+                  <div key={index} className="flex justify-between">
+                    <p>{item.name}</p>
+                    <p>{item.price}</p>
+                  </div>
+                ))
+              )}
+            </div>
+            <button
+              className="mt-4 w-full bg-red-500 text-white p-2 rounded-md hover:bg-red-600"
+              onClick={() => setIsModalOpen(false)} 
+            >
+              Փակել
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
