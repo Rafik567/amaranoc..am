@@ -1,8 +1,8 @@
 import { create } from "zustand";
 
 const useStore = create((set) => ({
-  selectedItem: null,
-  setSelectedItem: (item) => set({ selectedItem: item }), 
+  selectedRegion: null,
+  setSelectedRegion: (region) => set({ selectedRegion: region }),
 }));
 
 export default useStore;

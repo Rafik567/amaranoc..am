@@ -73,8 +73,6 @@ export const dataBase = [
     
     title: "45,000 Դ",
   },
-];
-export let data2 = [
   {
     id: 1,
     image1:
@@ -102,6 +100,52 @@ export let data2 = [
   },
   {
     id: 3,
+    description: "Նօր Հաճն",
+    image1:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1712326262412--0.25440242535580326image.webp&w=1920&q=75",
+    image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1713190213135--0.12751309620072693image.webp&w=1920&q=75",
+    image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726751105740--0.02438617157514411image.webp&w=1920&q=75",
+      image4:
+      "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
+    title: "108,000 Դ",
+  },
+  {
+    id: 1,
+    image1: "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1718357206080--0.9650504930940831image.webp&w=1920&q=75",
+    description: "Դիլիջան",
+    title: "50,000 ֏"
+  },
+  {
+    id: 2,
+    image1: "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1718356722138--0.11008897457962119image.webp&w=1920&q=75",
+    title: "50,000 ֏",
+    description: "Դիլիջան",
+
+  },
+  {
+    id: 3,
+    image1: "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1705568809908--0.18602545372675205image.webp&w=1920&q=75",
+    description: "Երևան",
+    title: "35,000 ֏"
+  },
+  {
+    id: 1,
+    image1: "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1738655037509--0.5071256793581231image.webp&w=1920&q=75",
+    description: "Ձորաղբյուր",
+    title: "100,000 ֏"
+
+  },
+  {
+    id: 2,
+    image1: "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1732616461236--0.6541537220629399image.webp&w=1920&q=75",
+    description: "Ձորաղբյուր",
+    title: "150,000 ֏"
+
+  },
+  {
+    id: 3,
     image1:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735307864481--0.8688546137086155image.webp&w=1920&q=75",
     image3:
@@ -113,8 +157,6 @@ export let data2 = [
     description: "Քասախ",
     title: "120,000 Դ",
   },
-];
-export let data3 = [
   {
     id: 1,
     image1:
@@ -155,7 +197,9 @@ export let data3 = [
     title: "25,000 Դ",
   },
 ];
-export let data4 = [
+
+
+export let dataBase2 = [
 
   {
     id: 1,
@@ -196,8 +240,6 @@ export let data4 = [
     description: "Աբովյան",
     title: "55,000 Դ",
   },
-];
-export const data6 = [
   {
     id: 2,
     title: "90,000 Դ",
@@ -238,8 +280,6 @@ export const data6 = [
     title: "130,000 Դ",
     description: "Ծաղկաձոր",
   },
-];
-export let data7 = [
   {
     id: 1,
     description: "Բջնի",
@@ -279,8 +319,6 @@ export let data7 = [
       "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
     title: "80,000 Դ",
   },
-];
-export let data8 = [
   {
     id: 1,
     description: "Ծաղկաձոր",
@@ -307,20 +345,11 @@ export let data8 = [
       "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
     title: "100,000 Դ",
   },
-  {
-    id: 3,
-    description: "Նօր Հաճն",
-    image1:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1712326262412--0.25440242535580326image.webp&w=1920&q=75",
-    image2:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1713190213135--0.12751309620072693image.webp&w=1920&q=75",
-    image3:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726751105740--0.02438617157514411image.webp&w=1920&q=75",
-      image4:
-      "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
-    title: "108,000 Դ",
-  },
+
 ];
+
+
+
 export const dataRegion = [
   { text: "Դիլիջան", id: 1 },
   { text: "Ծաղկաձոր", id: 2 },

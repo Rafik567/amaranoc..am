@@ -1,6 +1,6 @@
-import React from "react";
-import "../BodyAll/filter.css";
-import { data, data2, data6, data7, data8, dataBase } from "../Data/DataBase";
+import React, { useState } from "react";
+import "../BodyAll/filter.css"
+
 import Map from "./Map";
 import Home from "./Home";
 import BestOffers from "./BestOffers";
@@ -8,16 +8,18 @@ import Regular from "./Regular";
 import Filter from "../BodyAll/Filter";
 
 const BodyAll = () => {
+  const [selectedRegion, setSelectedRegion] = useState(null);
   return (
     <>
       <div className="flex justify-evenly mt-[60px]">
-        <Filter />
+      <Filter setRegion={setSelectedRegion} />
         <div>
           <Map />
           <div>
             <Home />
           </div>
-          <BestOffers />
+          
+      <BestOffers selectedRegion={selectedRegion} />
           <Regular />
         </div>
       </div>

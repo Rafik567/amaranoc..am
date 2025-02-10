@@ -1,5 +1,5 @@
 import React from "react";
-import { data, data4, data6, data7, data8 } from "../Data/DataBase";
+import { dataBase2 } from "../Data/DataBase";
 import Slider from "react-slick";
 import Filter from "./Filter";
 
@@ -13,14 +13,14 @@ const Regular = () => {
     initialSlide: 0,
   };
 
-  const allData = [...data6, ...data7, ...data8, ...data4];
+
 
   return (
     <div className="mt-8 px-4">
         <strong className="block text-lg ">Սովորական առաջարկներ</strong>
 
         <div className=" justify-center  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-6 mt-8">
-          {allData.map((el) => (
+          {dataBase2.map((el) => (
             <div key={el.id} className="border p-4 rounded-lg shadow-md bg-white">
               <Slider {...settings}>
                 <img src={el.image1} className="rounded-lg object-cover w-full h-48" alt={el.title} />
