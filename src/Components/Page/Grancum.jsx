@@ -1,17 +1,7 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const Login = () => {
-  const nav = useNavigate();
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  function log() {
-    if (email == "amaranoc@gmail.com" && password == "123456") {
-      localStorage.setItem("key", true);
-      location.reload();
-    }
-  }
-
+const Grancum = () => {
   return (
     <div className="mt-[100px] flex flex-col items-center px-4">
       <div className="text-center text-xl font-bold">Մուտք</div>
@@ -19,23 +9,31 @@ const Login = () => {
 
       <div className="mt-5 w-full max-w-[450px]">
         <input
-          type="email"
+          type="text"
           className="w-full rounded-[10px] border-2 border-gray-300 p-2"
-          placeholder="Էլ․ հասցե"
-          onChange={(e) => {
-            setEmail(e.target.value);
-          }}
+          placeholder="Անուն Ազգանուն"
         />
       </div>
 
       <div className="mt-5 w-full max-w-[450px]">
         <input
+          type="number"
+          className="w-full rounded-[10px] border-2 border-gray-300 p-2"
+          placeholder="Հեռախոսահամար"
+        />
+      </div>
+      <div className="mt-5 w-full max-w-[450px]">
+        <input
+          type="email"
+          className="w-full rounded-[10px] border-2 border-gray-300 p-2"
+          placeholder="Էլ Հասցե"
+        />
+      </div>
+      <div className="mt-5 w-full max-w-[450px]">
+        <input
           type="password"
           className="w-full rounded-[10px] border-2 border-gray-300 p-2"
           placeholder="Գաղտնաբառ"
-          onChange={(e) => {
-            setPassword(e.target.value);
-          }}
         />
       </div>
 
@@ -44,10 +42,7 @@ const Login = () => {
       </div>
 
       <div className="mt-5 w-full max-w-[400px]">
-        <button
-          onClick={log}
-          className="w-full bg-orange-500 rounded-[30px] text-white h-[50px]"
-        >
+        <button className="w-full bg-orange-500 rounded-[30px] text-white h-[50px]">
           Մուտք
         </button>
       </div>
@@ -62,12 +57,10 @@ const Login = () => {
 
       <div className="mt-5 flex items-center ">
         <p>Դեռ գրանցված չե՞ք։</p>
-        <Link to={"/grancum"} className="text-orange-500  cursor-pointer">
-          Գրանցում
-        </Link>
+        <p className="text-orange-500  cursor-pointer">Գրանցում</p>
       </div>
     </div>
   );
 };
 
-export default Login;
+export default Grancum;
