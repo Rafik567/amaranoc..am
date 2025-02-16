@@ -11,25 +11,23 @@ import Login from "./Components/Page/Login";
 import DisCount from "./Components/Page/DisCount";
 import About from "./Components/Page/About";
 
-function App() {
+const App: React.FC = () => {
+  const [key, setKey] = useState<string | null>(localStorage.getItem("key"));
+
   return (
-    
     <Router>
       <TopHeader />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={key ? <Home /> : <Login />} />
         <Route path="/services" element={<Carayutyuner />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/discount" element={ <DisCount/>} />
-        <Route path="/about" element={ <About/>} />
-
-
+        <Route path="/discount" element={<DisCount />} />
+        <Route path="/about" element={<About />} />
       </Routes>
-      
+
       <Footer />
     </Router>
   );
-}
+};
 
 export default App;
- 

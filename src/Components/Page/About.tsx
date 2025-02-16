@@ -7,7 +7,7 @@ import Cooperate from '../Ejer/Cooperate';
 import Marketing from '../Ejer/Marketing';
 import Story from '../Ejer/Story';
 
-const About = () => {
+const About: React.FC = () => {
   return (
     <>
       <div className="container mx-auto px-4">
@@ -44,7 +44,7 @@ const About = () => {
           />
         </div>
       </div>
-          <Post />
+      <Post />
     </>
   );
 }

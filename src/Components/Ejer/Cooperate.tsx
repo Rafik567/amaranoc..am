@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-const Cooperate = () => {
+const Cooperate: React.FC = () => {
   return (
-    <div className="mt-[80px] flex justify-center ">
+    <div className="mt-[80px] flex justify-center">
       <img 
-        src='https://amaranoc.am/_next/image?url=%2Fimages%2Fabout-us%2Fabout-background-pc.jpg&w=1920&q=75' 
-        className="w-[35vw] h-[50vh] rounded-[20px] sm:w-[60vw] sm:h-[40vh] md:w-[45vw] md:h-[50vh]" 
+        src="https://amaranoc.am/_next/image?url=%2Fimages%2Fabout-us%2Fabout-background-pc.jpg&w=1920&q=75"
         alt="Cooperate image"
+        className="w-[35vw] h-[50vh] rounded-[20px] sm:w-[60vw] sm:h-[40vh] md:w-[45vw] md:h-[50vh]" 
       />
       <strong className="text-[30px] ml-[40px] sm:text-[24px] md:text-[28px] mt-[20px] md:mt-0">
         Ինչու համագործակցել amaranoc.am -ի հետ
@@ -24,7 +24,7 @@ const Cooperate = () => {
         </p>
       </strong>
     </div>
-  )
-}
+  );
+};
 
-export default Cooperate
+export default Cooperate;

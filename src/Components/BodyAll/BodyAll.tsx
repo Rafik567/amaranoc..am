@@ -5,21 +5,26 @@ import Map from "./Map";
 import Home from "./Home";
 import BestOffers from "./BestOffers";
 import Regular from "./Regular";
-import Filter from "../BodyAll/Filter";
+import Filter from "./Filter";
 
-const BodyAll = () => {
-  const [selectedRegion, setSelectedRegion] = useState(null);
+// Տիպավորում selectedRegion-ի համար
+interface BodyAllProps {
+  selectedRegion: string | null;
+}
+
+const BodyAll: React.FC = () => {
+  const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
+
   return (
     <>
       <div className="flex justify-evenly mt-[60px]">
-      <Filter setRegion={setSelectedRegion} />
+        <Filter setRegion={setSelectedRegion} />
         <div>
           <Map />
           <div>
             <Home />
           </div>
-          
-      <BestOffers selectedRegion={selectedRegion} />
+          <BestOffers selectedRegion={selectedRegion} />
           <Regular />
         </div>
       </div>

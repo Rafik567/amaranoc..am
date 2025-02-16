@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-const Team = () => {
+const Team: React.FC = () => {
   return (
     <div className="mt-[80px] flex flex-wrap justify-center items-center space-x-[20px]">
       <strong className="text-[30px] ml-[40px] sm:text-[24px] md:text-[28px] text-center sm:text-left">
@@ -24,7 +24,7 @@ const Team = () => {
         alt="Team Image"
       />
     </div>
-  )
+  );
 }
 
-export default Team
+export default Team;

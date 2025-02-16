@@ -1,12 +1,16 @@
-
 import React, { useState } from "react";
 import "../BodyAll/filter.css";
-import { dataRegion, arjeq, buttons, rooms } from "../Data/DataBase"; 
+import { dataRegion, arjeq, buttons, rooms } from "../Data/DataBase";
 
-const Filter = ({ setRegion }) => {
-  const [selectedRegions, setSelectedRegions] = useState([]);
+// Տիպավորում setRegion-ի Prop-ի համար
+interface FilterProps {
+  setRegion: (region: string | null) => void;
+}
 
-  const handleCheckboxChange = (region) => {
+const Filter: React.FC<FilterProps> = ({ setRegion }) => {
+  const [selectedRegions, setSelectedRegions] = useState<string[]>([]);
+
+  const handleCheckboxChange = (region: string) => {
     setSelectedRegions([region]);
     setRegion(region);
   };
@@ -78,7 +82,6 @@ const Filter = ({ setRegion }) => {
         </div>
         <hr />
 
-
         <div className="filter-group">
           <strong>Սենյակների քանակ</strong>
           <div className="flex flex-wrap gap-3">
@@ -93,15 +96,9 @@ const Filter = ({ setRegion }) => {
             ))}
           </div>
         </div>
-
-
       </div>
     </div>
-
-
-
   );
 };
 
 export default Filter;
-

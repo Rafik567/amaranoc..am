@@ -1,7 +1,11 @@
 import React from 'react';
 
+interface ButtonData {
+  value: string;
+}
+
 const Order = () => {
-  const buttonsData = [
+  const buttonsData: ButtonData[] = [
     { value: "50,000" },
     { value: "60,000" },
     { value: "70,000" },

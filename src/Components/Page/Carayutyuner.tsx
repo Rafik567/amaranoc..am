@@ -3,12 +3,27 @@ import TopHeader from "../Header/TopHeader";
 import { data, dataCara, dataTesak } from "../Data/DataBase";
 import Post from "../BodyAll/Post";
 import Footer from "../Footer/Footer";
-const Carayutyuner = () => {
+
+interface ItemCara {
+  id: number;
+  url: string;
+  text: string;
+}
+
+interface ItemTesak {
+  id: number;
+  image: string;
+  title: string;
+  description: string;
+  price: string;
+}
+
+const Carayutyuner: React.FC = () => {
   return (
     <>
       <hr className="mt-[50px]" />
       <div className="flex justify-evenly mt-10 flex-wrap gap-1 sm:gap-12">
-        {dataCara.map((el) => (
+        {dataCara.map((el: ItemCara) => (
           <div
             key={el.id}
             className="flex flex-col items-center  w-20 sm:w-24 md:w-20"
@@ -31,7 +46,7 @@ const Carayutyuner = () => {
       </div>
       <hr />
       <div className="flex justify-center mt-[50px] flex-wrap gap-[15px] sm:gap-[25px] ">
-        {dataTesak.map((el) => (
+        {dataTesak.map((el: ItemTesak) => (
           <div
             key={el.id}
             className="flex flex-col w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4"

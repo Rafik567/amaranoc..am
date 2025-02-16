@@ -1,11 +1,26 @@
-import React, { useState } from "react";
+import React, { useState, FC } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { dataBase } from "../Data/DataBase";
 
-const BestOffers = ({ selectedRegion }) => {
-  const [showFiltered, setShowFiltered] = useState(false);
+// Տվյալների տիպավորումը
+interface Offer {
+  id: number;
+  image1: string;
+  image2: string;
+  image3: string;
+  description: string;
+  title: string;
+}
+
+// Props-ի տիպավորումը
+interface BestOffersProps {
+  selectedRegion: string | null;
+}
+
+const BestOffers: FC<BestOffersProps> = ({ selectedRegion }) => {
+  const [showFiltered, setShowFiltered] = useState<boolean>(false);
 
   const settings = {
     dots: true,
@@ -16,8 +31,9 @@ const BestOffers = ({ selectedRegion }) => {
     initialSlide: 0,
   };
 
-  const filteredData = selectedRegion
-    ? dataBase.filter((el) => el.description === selectedRegion)
+  // Ստուգում ենք, արդյոք կա տվյալ selectedRegion-ի համար համապատասխան առաջարկ
+  const filteredData: Offer[] = selectedRegion
+    ? dataBase.filter((el) => el.description?.toLowerCase().includes(selectedRegion.toLowerCase()))
     : [];
 
   const handleToggle = () => {
@@ -30,19 +46,37 @@ const BestOffers = ({ selectedRegion }) => {
 
       <div className="justify-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
         {!showFiltered
-          ? dataBase.map((el) => (
-              <div key={el.id} className="border p-4 rounded-lg shadow-md bg-white">
-                <Slider {...settings}>
-                  <img src={el.image1} className="rounded-lg object-cover w-full h-48" alt={el.title} />
-                  <img src={el.image2} className="rounded-lg object-cover w-full h-48" alt={el.title} />
-                  <img src={el.image3} className="rounded-lg object-cover w-full h-48" alt={el.title} />
-                </Slider>
-                <p className="text-black mt-4 text-base sm:text-lg">{el.description}</p>
-                <p className="text-black mt-2 text-lg sm:text-xl font-bold">{el.title}</p>
-              </div>
+          ? dataBase.map((el: Offer) => (
+            <div key={el.id} className="border p-4 rounded-lg shadow-md bg-white">
+            <Slider {...settings}>
+              {/* Սա պատկերի սլայդեր է */}
+              <img
+                src={el.image1}
+                className="rounded-lg object-cover w-full h-48"
+                alt={`${el.title} - image 1`}
+              />
+              <img
+                src={el.image2}
+                className="rounded-lg object-cover w-full h-48"
+                alt={`${el.title} - image 2`}
+              />
+              <img
+                src={el.image3}
+                className="rounded-lg object-cover w-full h-48"
+                alt={`${el.title} - image 3`}
+              />
+            </Slider>
+          
+            {/* Description */}
+            <p className="text-black mt-4 text-base sm:text-lg">{el.description}</p>
+          
+            {/* Title */}
+            <p className="text-black mt-2 text-lg sm:text-xl font-bold">{el.title}</p>
+          </div>
+          
             ))
           : filteredData.length > 0 ? (
-              filteredData.map((el) => (
+              filteredData.map((el: Offer) => (
                 <div key={el.id} className="border p-4 rounded-lg shadow-md bg-white">
                   <Slider {...settings}>
                     <img src={el.image1} className="rounded-lg object-cover w-full h-48" alt={el.title} />

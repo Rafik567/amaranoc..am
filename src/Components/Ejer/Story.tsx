@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-const Story = () => {
+const Story: React.FC = () => {
     return (
         <div className="mt-[80px] flex flex-wrap justify-center items-center space-x-[20px]">
             <img 
@@ -23,7 +23,7 @@ const Story = () => {
                 </p>
             </strong>
         </div>
-    )
+    );
 }
 
-export default Story
+export default Story;

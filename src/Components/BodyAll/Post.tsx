@@ -1,6 +1,13 @@
 import React from 'react';
-import "..///../App.css"
-import {postData} from "../Data/DataBase";
+import "..///../App.css";
+import { postData } from "../Data/DataBase";
+
+interface PostDataField {
+  id: number;
+  type: string;
+  className: string;
+  placeholder: string;
+}
 
 const Post = () => {
   return (
@@ -17,7 +24,7 @@ const Post = () => {
               </p>
             </div>
             <div className="flex flex-wrap justify-center gap-[15px] sm:gap-[20px] mt-[70px]">
-              {postData.map((field) => (
+              {postData.map((field: PostDataField) => (
                 <input
                   key={field.id}
                   type={field.type}
@@ -29,7 +36,6 @@ const Post = () => {
                 Ուղարկել
               </button>
             </div>
-
           </div>
         </div>
       </div>

@@ -1,13 +1,17 @@
 import React from "react";
 
-const contactDetails = [
+interface ContactDetail {
+  text: string;
+}
+
+const contactDetails: ContactDetail[] = [
   { text: "📞 041-611-611 / 044-611-611" },
   { text: "📧 ADDRESS.AMARANOC@GMAIL.COM" },
   { text: "🌍 AMARANOC.AM" },
   { text: "📍 ԹՈՒՄԱՆՅԱՆ 5" },
 ];
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <div className="bg-[#101623] text-white pt-10 relative">
       <div className="text-center">
@@ -31,8 +35,6 @@ const Footer = () => {
           alt="footer-background"
         />
       </div>
-
-     
     </div>
   );
 };

@@ -1,17 +1,23 @@
 import React, { useState } from "react";
 
 const Map = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isCalendarOpen, setIsCalendarOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [isCalendarOpen, setIsCalendarOpen] = useState<boolean>(false);
 
   const modalAction = () => {
-    setIsModalOpen(!isModalOpen);
-    document.body.style.overflow = isModalOpen ? "auto" : "hidden";
+    setIsModalOpen((prevState) => {
+      const newState = !prevState;
+      document.body.style.overflow = newState ? "hidden" : "auto";
+      return newState;
+    });
   };
 
   const calendarAction = () => {
-    setIsCalendarOpen(!isCalendarOpen);
-    document.body.style.overflow = isCalendarOpen ? "auto" : "hidden";
+    setIsCalendarOpen((prevState) => {
+      const newState = !prevState;
+      document.body.style.overflow = newState ? "hidden" : "auto";
+      return newState;
+    });
   };
 
   return (
@@ -31,10 +37,8 @@ const Map = () => {
 
       {isModalOpen && (
         <div className="modal-overlay fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
-          <div className="modal-content w-[350px] sm:w-[300px] md:w-[350px] lg:w-[400px] xl:w-[500px]  bg-white p-5 rounded-lg">
-            <h2 className="ml-[85px] text-lg sm:text-sm md:text-lg">
-              Քարտեզի մոդալը
-            </h2>
+          <div className="modal-content w-[350px] sm:w-[300px] md:w-[350px] lg:w-[400px] xl:w-[500px] bg-white p-5 rounded-lg">
+            <h2 className="ml-[85px] text-lg sm:text-sm md:text-lg">Քարտեզի մոդալը</h2>
             <button
               onClick={modalAction}
               className="mt-4 ml-[110px] rounded-[20px] bg-red-500 text-white py-2 px-4 flex justify-center items-center"

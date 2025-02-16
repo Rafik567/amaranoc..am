@@ -1,17 +1,22 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const TopHeader = () => {
-  const [showLanguages, setShowLanguages] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false); // Մոդալի բացման վիճակ
-  const [cartItems, setCartItems] = useState([]); // Թարմացվող բասկետ
+interface CartItem {
+  name: string;
+  price: string;
+}
+
+const TopHeader: React.FC = () => {
+  const [showLanguages, setShowLanguages] = useState<boolean>(false);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false); // Modal open state
+  const [cartItems, setCartItems] = useState<CartItem[]>([]); // Updatable cart
 
   const handleBasketClick = () => {
-    setIsModalOpen(!isModalOpen); // Սեղմելուց մոդալը բացվում կամ փակվում
+    setIsModalOpen(!isModalOpen); // Toggle modal open/close
   };
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-evenly px-4 py-3  w-full bg-white">
+    <div className="flex flex-col md:flex-row items-center justify-evenly px-4 py-3 w-full bg-white">
       <div className="flex items-center">
         <img
           src="https://amaranoc.am/images/logo.svg"
@@ -28,7 +33,7 @@ const TopHeader = () => {
       </div>
 
       <div className="flex items-center gap-6 relative">
-        <i className="fa fa-shopping-basket text-2xl cursor-pointer" onClick={handleBasketClick}></i> {/* Սեղմելիս բացվում է մոդալ */}
+        <i className="fa fa-shopping-basket text-2xl cursor-pointer" onClick={handleBasketClick}></i> {/* Open/close modal on click */}
 
         <i
           className="fa fa-globe text-2xl cursor-pointer"
