@@ -11,8 +11,11 @@ import Login from "./Components/Page/Login";
 import DisCount from "./Components/Page/DisCount";
 import About from "./Components/Page/About";
 
+
+
 const App: React.FC = () => {
   const [key, setKey] = useState<string | null>(localStorage.getItem("key"));
+
 
   return (
     <Router>

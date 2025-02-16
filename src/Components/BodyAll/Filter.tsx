@@ -38,7 +38,12 @@ const Filter: React.FC<FilterProps> = ({ setRegion }) => {
           <div className="flex gap-4 mt-2">
             {arjeq.map((currency) =>
               currency.type === "image" ? (
-                <img key={currency.id} src={currency.icon} alt={currency.alt} className="w-[40px]" />
+                <img
+                  key={currency.id}
+                  src={currency.icon}
+                  alt={currency.alt}
+                  className="w-[40px]"
+                />
               ) : (
                 <i
                   key={currency.id}
@@ -49,9 +54,17 @@ const Filter: React.FC<FilterProps> = ({ setRegion }) => {
             )}
           </div>
           <div className="price-range mt-4 flex flex-wrap gap-2">
-            <input type="number" placeholder="Սկսած" className="w-full sm:w-[120px]" />
+            <input
+              type="number"
+              placeholder="Սկսած"
+              className="w-full sm:w-[120px]"
+            />
             <span>-</span>
-            <input type="number" placeholder="Մինչև" className="w-full sm:w-[120px]" />
+            <input
+              type="number"
+              placeholder="Մինչև"
+              className="w-full sm:w-[120px]"
+            />
           </div>
         </div>
         <hr />
@@ -73,7 +86,10 @@ const Filter: React.FC<FilterProps> = ({ setRegion }) => {
               <button
                 key={button.id}
                 className="rounded-[30px] h-[50px] bg-gray-300 text-black"
-                style={{ width: button.width, marginTop: button.id === 3 ? "10px" : "0" }}
+                style={{
+                  width: button.width,
+                  marginTop: button.id === 3 ? "10px" : "0",
+                }}
               >
                 {button.text}
               </button>
@@ -89,7 +105,10 @@ const Filter: React.FC<FilterProps> = ({ setRegion }) => {
               <button
                 key={room.id}
                 className="rounded-[30px] h-[50px] bg-gray-300 text-black"
-                style={{ width: room.width, marginTop: room.id >= 7 ? "10px" : "0" }}
+                style={{
+                  width: room.width,
+                  marginTop: room.id >= 7 ? "10px" : "0",
+                }}
               >
                 {room.text}
               </button>

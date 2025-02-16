@@ -46,37 +46,19 @@ const BestOffers: FC<BestOffersProps> = ({ selectedRegion }) => {
 
       <div className="justify-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
         {!showFiltered
-          ? dataBase.map((el: Offer) => (
-            <div key={el.id} className="border p-4 rounded-lg shadow-md bg-white">
-            <Slider {...settings}>
-              {/* Սա պատկերի սլայդեր է */}
-              <img
-                src={el.image1}
-                className="rounded-lg object-cover w-full h-48"
-                alt={`${el.title} - image 1`}
-              />
-              <img
-                src={el.image2}
-                className="rounded-lg object-cover w-full h-48"
-                alt={`${el.title} - image 2`}
-              />
-              <img
-                src={el.image3}
-                className="rounded-lg object-cover w-full h-48"
-                alt={`${el.title} - image 3`}
-              />
-            </Slider>
-          
-            {/* Description */}
-            <p className="text-black mt-4 text-base sm:text-lg">{el.description}</p>
-          
-            {/* Title */}
-            <p className="text-black mt-2 text-lg sm:text-xl font-bold">{el.title}</p>
-          </div>
-          
+          ? dataBase.map((el) => (
+              <div key={el.id} className="border p-4 rounded-lg shadow-md bg-white">
+                <Slider {...settings}>
+                  <img src={el.image1} className="rounded-lg object-cover w-full h-48" alt={el.title} />
+                  <img src={el.image2} className="rounded-lg object-cover w-full h-48" alt={el.title} />
+                  <img src={el.image3} className="rounded-lg object-cover w-full h-48" alt={el.title} />
+                </Slider>
+                <p className="text-black mt-4 text-base sm:text-lg">{el.description}</p>
+                <p className="text-black mt-2 text-lg sm:text-xl font-bold">{el.title}</p>
+              </div>
             ))
           : filteredData.length > 0 ? (
-              filteredData.map((el: Offer) => (
+              filteredData.map((el) => (
                 <div key={el.id} className="border p-4 rounded-lg shadow-md bg-white">
                   <Slider {...settings}>
                     <img src={el.image1} className="rounded-lg object-cover w-full h-48" alt={el.title} />

@@ -22,7 +22,7 @@ const Map = () => {
 
   return (
     <div>
-      <div className="pl-[270px] flex flex-wrap gap-[20px]">
+      <div className="pl-[270px] hidden sm:block flex flex-wrap gap-[20px]">
         <button
           className="w-[180px] sm:w-[150px] md:w-[180px] rounded-[40px] border-2 border-gray-300 p-[8px]"
           onClick={modalAction}
