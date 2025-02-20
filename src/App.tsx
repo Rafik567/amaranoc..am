@@ -19,7 +19,7 @@ const App: React.FC = () => {
 
   return (
     <Router>
-      <TopHeader />
+      
       <Routes>
         <Route path="/" element={key ? <Home /> : <Login />} />
         <Route path="/services" element={<Carayutyuner />} />

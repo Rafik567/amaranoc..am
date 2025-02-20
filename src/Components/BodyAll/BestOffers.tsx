@@ -4,7 +4,6 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { dataBase } from "../Data/DataBase";
 
-// Տվյալների տիպավորումը
 interface Offer {
   id: number;
   image1: string;
@@ -14,7 +13,6 @@ interface Offer {
   title: string;
 }
 
-// Props-ի տիպավորումը
 interface BestOffersProps {
   selectedRegion: string | null;
 }
@@ -31,7 +29,6 @@ const BestOffers: FC<BestOffersProps> = ({ selectedRegion }) => {
     initialSlide: 0,
   };
 
-  // Ստուգում ենք, արդյոք կա տվյալ selectedRegion-ի համար համապատասխան առաջարկ
   const filteredData: Offer[] = selectedRegion
     ? dataBase.filter((el) => el.description?.toLowerCase().includes(selectedRegion.toLowerCase()))
     : [];
