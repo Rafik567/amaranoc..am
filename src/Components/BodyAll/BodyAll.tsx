@@ -10,20 +10,17 @@ import TopHeader from "../Header/TopHeader";
 
 const BodyAll: React.FC = () => {
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
-  const [filteredRegion, setFilteredRegion] = useState<string | null>(null);
+  const [searchQuery, setSearchQuery] = useState<string | null>(null);
 
-  // Երբ region-ը փոխվում է, այն փոխանցում ենք միայն որոշ ժամանակ անց
   useEffect(() => {
-    const timeout = setTimeout(() => {
-      setFilteredRegion(selectedRegion);
-    }, 300); // 300 միլիվայրկյան սպասում՝ կանխելու համար կրկնվող ռենդեռները
-
-    return () => clearTimeout(timeout);
-  }, [selectedRegion]);
+    if (searchQuery) {
+      setSelectedRegion(searchQuery);
+    }
+  }, [searchQuery]);
 
   return (
     <>
-      <TopHeader />
+      <TopHeader onSearch={setSearchQuery} />
       <div className="flex justify-evenly mt-[60px]">
         <Filter setRegion={setSelectedRegion} />
         <div>
@@ -31,8 +28,8 @@ const BodyAll: React.FC = () => {
           <div>
             <Home />
           </div>
-          <BestOffers selectedRegion={filteredRegion} />
-          <Regular />
+          <BestOffers selectedRegion={selectedRegion} />
+          <Regular selectedRegion={selectedRegion} />
         </div>
       </div>
     </>

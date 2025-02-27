@@ -1,8 +1,9 @@
-import React, { useState, FC } from "react";
+import React, { FC } from "react";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { dataBase } from "../Data/DataBase";
+import { useNavigate } from "react-router-dom";
 
 interface Offer {
   id: number;
@@ -18,7 +19,7 @@ interface BestOffersProps {
 }
 
 const BestOffers: FC<BestOffersProps> = ({ selectedRegion }) => {
-  const [showFiltered, setShowFiltered] = useState<boolean>(false);
+  const navigate = useNavigate();
 
   const settings = {
     dots: true,
@@ -30,11 +31,13 @@ const BestOffers: FC<BestOffersProps> = ({ selectedRegion }) => {
   };
 
   const filteredData: Offer[] = selectedRegion
-    ? dataBase.filter((el) => el.description?.toLowerCase().includes(selectedRegion.toLowerCase()))
+    ? dataBase.filter((el) =>
+        el.description?.toLowerCase().includes(selectedRegion.toLowerCase())
+      )
     : [];
 
-  const handleToggle = () => {
-    setShowFiltered(!showFiltered);
+  const handleClick = (id: number) => {
+    navigate(`/offer/${id}`);
   };
 
   return (
@@ -42,41 +45,38 @@ const BestOffers: FC<BestOffersProps> = ({ selectedRegion }) => {
       <strong className="block text-lg sm:text-xl">Լավագույն առաջարկներ</strong>
 
       <div className="justify-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-8">
-        {!showFiltered
-          ? dataBase.map((el) => (
-              <div key={el.id} className="border p-4 rounded-lg shadow-md bg-white">
-                <Slider {...settings}>
-                  <img src={el.image1} className="rounded-lg object-cover w-full h-48" alt={el.title} />
-                  <img src={el.image2} className="rounded-lg object-cover w-full h-48" alt={el.title} />
-                  <img src={el.image3} className="rounded-lg object-cover w-full h-48" alt={el.title} />
-                </Slider>
-                <p className="text-black mt-4 text-base sm:text-lg">{el.description}</p>
-                <p className="text-black mt-2 text-lg sm:text-xl font-bold">{el.title}</p>
-              </div>
-            ))
-          : filteredData.length > 0 ? (
-              filteredData.map((el) => (
-                <div key={el.id} className="border p-4 rounded-lg shadow-md bg-white">
-                  <Slider {...settings}>
-                    <img src={el.image1} className="rounded-lg object-cover w-full h-48" alt={el.title} />
-                    <img src={el.image2} className="rounded-lg object-cover w-full h-48" alt={el.title} />
-                    <img src={el.image3} className="rounded-lg object-cover w-full h-48" alt={el.title} />
-                  </Slider>
-                  <p className="text-black mt-4 text-base sm:text-lg">{el.description}</p>
-                  <p className="text-black mt-2 text-lg sm:text-xl font-bold">{el.title}</p>
-                </div>
-              ))
-            ) : (
-              <p className="text-center text-gray-500 text-lg mt-4">Տվյալներ չեն գտնվել</p>
-            )}
+        {(selectedRegion ? filteredData : dataBase).map((el) => (
+          <div
+            key={el.id}
+            className="border p-4 rounded-lg shadow-md bg-white cursor-pointer"
+            onClick={() => handleClick(el.id)}
+          >
+            <Slider {...settings}>
+              <img
+                src={el.image1}
+                className="rounded-lg object-cover w-full h-48"
+                alt={el.title}
+              />
+              <img
+                src={el.image2}
+                className="rounded-lg object-cover w-full h-48"
+                alt={el.title}
+              />
+              <img
+                src={el.image3}
+                className="rounded-lg object-cover w-full h-48"
+                alt={el.title}
+              />
+            </Slider>
+            <p className="text-black mt-4 text-base sm:text-lg">
+              {el.description}
+            </p>
+            <p className="text-black mt-2 text-lg sm:text-xl font-bold">
+              {el.title}
+            </p>
+          </div>
+        ))}
       </div>
-
-      <button
-        onClick={handleToggle}
-        className="mt-4 py-2 px-6 text-white bg-blue-500 rounded-lg hover:bg-blue-700"
-      >
-        {showFiltered ? "Ցուցադրել բոլոր նկարները" : "Ցուցադրել ընտրվածը"}
-      </button>
     </div>
   );
 };

@@ -6,10 +6,12 @@ import Team from '../Ejer/Team';
 import Cooperate from '../Ejer/Cooperate';
 import Marketing from '../Ejer/Marketing';
 import Story from '../Ejer/Story';
+import TopHeader from '../Header/TopHeader';
 
 const About: React.FC = () => {
   return (
     <>
+    <TopHeader/>
       <div className="container mx-auto px-4">
         <div className="about-fon">
           <img 

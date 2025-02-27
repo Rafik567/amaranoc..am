@@ -5,10 +5,10 @@ interface ContactDetail {
 }
 
 const contactDetails: ContactDetail[] = [
-  { text: "📞 041-611-611 / 044-611-611" },
-  { text: "📧 ADDRESS.AMARANOC@GMAIL.COM" },
-  { text: "🌍 AMARANOC.AM" },
-  { text: "📍 ԹՈՒՄԱՆՅԱՆ 5" },
+  { text: "041-611-611 / 044-611-611" },
+  { text: " ADDRESS.AMARANOC@GMAIL.COM" },
+  { text: " AMARANOC.AM" },
+  { text: " ԹՈՒՄԱՆՅԱՆ 5" },
 ];
 
 const Footer: React.FC = () => {

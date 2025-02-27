@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "../BodyAll/filter.css";
 import { dataRegion, arjeq, buttons, rooms } from "../Data/DataBase";
 
-// Տիպավորում setRegion-ի Prop-ի համար
 interface FilterProps {
   setRegion: (region: string | null) => void;
 }

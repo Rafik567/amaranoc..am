@@ -39,10 +39,21 @@ export const dataBase = [
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1736346552289--0.5030256802723989image.webp&w=1920&q=75",
     image3:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1736264307376--0.05774249511108165image.webp&w=1920&q=75",
-      image4:
-      "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
+    image4:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2F1736346552296--0.13629800902530498image_optimized.webp&w=1920&q=75",
     description: "Ծաղկաձոր",
+    code: "AM146-1",
+    address: "Պահլավունյանց",
+    overnight: "Այո",
+    buildingArea: "200 քմ",
+    totalArea: "1000 քմ",
+    peopleCount: "20",
+    overnightCount: "8",
+    roomCount: "5",
+    bathroomCount: "3+",
+    pool: "Առանց լողավազանի",
     title: "100,000 Դ",
+
   },
   {
     id: 3,
@@ -52,10 +63,19 @@ export const dataBase = [
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1736346067866--0.6115993820417309image.webp&w=1920&q=75",
     image3:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1736346067861--0.3886971024997965image.webp&w=1920&q=75",
-      image4:
-      "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
+    image4:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2F1736346068060--0.36482301171177633image_optimized.webp&w=1920&q=75",
     description: "Ծաղկաձոր",
-    
+    code: "AM349",
+    address: "Սարալանջի փողոց",
+    overnight: "Այո",
+    buildingArea: "100 քմ",
+    totalArea: "300 քմ",
+    peopleCount: "8",
+    overnightCount: "8",
+    roomCount: "4",
+    bathroomCount: "2",
+    pool: "Առանց լողավազանի",
     title: "55,000 Դ",
   },
   {
@@ -67,10 +87,19 @@ export const dataBase = [
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1736264307374--0.692906081502914image.webp&w=1920&q=75",
     image2:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1736264307379--0.38863366588149684image.webp&w=1920&q=75",
-      image4:
-      "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
+
     description: "Ծաղկաձոր",
-    
+    code: "AM312",
+    address: "Ծաղկաձոր, Սարալանջի փողոց",
+    overnight: "Այո",
+    buildingArea: "500 քմ",
+    totalArea: "62 քմ",
+    peopleCount: "6",
+    overnightCount: "6",
+    roomCount: "3",
+    bathroomCount: "1",
+    pool: "Առանց լողավազանի",
+
     title: "45,000 Դ",
   },
   {
@@ -81,9 +110,18 @@ export const dataBase = [
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1736262949768--0.08914733028584676image.webp&w=1920&q=75",
     image3:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1736262949756--0.6246274406013625image.webp&w=1920&q=75",
-      image4:
-      "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
     description: "Ծաղկաձոր",
+    code: "AM311",
+    address: "Ծաղկաձոր, Սարալանջի փողոց",
+    overnight: "Այո",
+    buildingArea: "500 քմ",
+    totalArea: "120 քմ",
+    peopleCount: "8",
+    overnightCount: "8",
+    roomCount: "4",
+    bathroomCount: "2",
+    pool: "Առանց լողավազանի",
+
     title: "65,000 Դ",
   },
   {
@@ -93,8 +131,7 @@ export const dataBase = [
     image2:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1737545409557--0.3434726795825285image.webp&w=1920&q=75",
     image3: "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735139871491--0.7825226005490338image.webp&w=1920&q=75",
-    image4:
-    "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
+
     description: "Արզական",
     title: "60,000",
   },
@@ -107,9 +144,43 @@ export const dataBase = [
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1713190213135--0.12751309620072693image.webp&w=1920&q=75",
     image3:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726751105740--0.02438617157514411image.webp&w=1920&q=75",
-      image4:
-      "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
     title: "108,000 Դ",
+  },
+  {
+    id: 1,
+    image1:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735305286415--0.799977604430975image.webp&w=1920&q=75",
+    image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735305286460--0.07116899535707355image.webp&w=1920&q=75",
+    image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735305286520--0.8993426466469785image.webp&w=1920&q=75",
+
+    description: "Դիլիջան",
+    title: "25,000 Դ",
+  },
+  {
+    id: 2,
+    image1:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735302502215--0.230355006263677image.webp&w=1920&q=75",
+    image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735309342080--0.8206555356980216image.webp&w=1920&q=75",
+    image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735309342813--0.33308176130582123image.webp&w=1920&q=75",
+
+    description: "Վանաձոր",
+    title: "30,000",
+  },
+  {
+    id: 3,
+    image1:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735210751295--0.852475450909614image.webp&w=1920&q=75",
+    image2:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735210751336--0.11280075081278595image.webp&w=1920&q=75",
+    image3:
+      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735210751347--0.1839402810683235image.webp&w=1920&q=75",
+
+    description: "Թեղենիք",
+    title: "25,000 Դ",
   },
   {
     id: 1,
@@ -152,49 +223,9 @@ export const dataBase = [
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1731076889190--0.1412159534000028image.webp&w=1920&q=75",
     image2:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1737545409585--0.48229779135214956image.webp&w=1920&q=75",
-      image4:
-      "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
+
     description: "Քասախ",
     title: "120,000 Դ",
-  },
-  {
-    id: 1,
-    image1:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735305286415--0.799977604430975image.webp&w=1920&q=75",
-    image2:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735305286460--0.07116899535707355image.webp&w=1920&q=75",
-    image3:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735305286520--0.8993426466469785image.webp&w=1920&q=75",
-      image4:
-      "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
-    description: "Դիլիջան",
-    title: "25,000 Դ",
-  },
-  {
-    id: 2,
-    image1:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735302502215--0.230355006263677image.webp&w=1920&q=75",
-    image2:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735309342080--0.8206555356980216image.webp&w=1920&q=75",
-    image3:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735309342813--0.33308176130582123image.webp&w=1920&q=75",
-      image4:
-      "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
-    description: "Վանաձոր",
-    title: "30,000",
-  },
-  {
-    id: 3,
-    image1:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735210751295--0.852475450909614image.webp&w=1920&q=75",
-    image2:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735210751336--0.11280075081278595image.webp&w=1920&q=75",
-    image3:
-      "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735210751347--0.1839402810683235image.webp&w=1920&q=75",
-      image4:
-      "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
-    description: "Թեղենիք",
-    title: "25,000 Դ",
   },
 ];
 
@@ -209,7 +240,7 @@ export let dataBase2 = [
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735305286440--0.8571705092666544image.webp&w=1920&q=75",
     image3:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735305286456--0.017850288752115473image.webp&w=1920&q=75",
-      image4:
+    image4:
       "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
     description: "Դիլիջան",
     title: "50,000 Դ",
@@ -222,7 +253,7 @@ export let dataBase2 = [
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1737545409557--0.3434726795825285image.webp&w=1920&q=75",
     image3:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735309342752--0.004481010974716648image.webp&w=1920&q=75",
-      image4:
+    image4:
       "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
     description: "Փարպի",
     title: "100,000 Դ",
@@ -235,7 +266,7 @@ export let dataBase2 = [
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1736264307377--0.7851958827390857image.webp&w=1920&q=75",
     image3:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1736264307380--0.05146765724390012image.webp&w=1920&q=75",
-      image4:
+    image4:
       "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
     description: "Աբովյան",
     title: "55,000 Դ",
@@ -249,7 +280,7 @@ export let dataBase2 = [
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735922464548--0.9200362262498665image.webp&w=1920&q=75",
     image3:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1735922464529--0.6869664694587136image.webp&w=1920&q=75",
-      image4:
+    image4:
       "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
 
     description: "Ակունք",
@@ -262,7 +293,7 @@ export let dataBase2 = [
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1719483738180--0.6434175033868983image.webp&w=1920&q=75",
     image3:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1719483738191--0.1326786566723197image.webp&w=1920&q=75",
-      image4:
+    image4:
       "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
     title: "150,000 Դ",
     description: "Արզնի",
@@ -275,7 +306,7 @@ export let dataBase2 = [
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726751105725--0.7220711625112image.webp&w=1920&q=75",
     image3:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726751105729--0.24303973078560226image.webp&w=1920&q=75",
-      image4:
+    image4:
       "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
     title: "130,000 Դ",
     description: "Ծաղկաձոր",
@@ -289,7 +320,7 @@ export let dataBase2 = [
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1719904417425--0.6539789619607399image.webp&w=1920&q=75",
     image3:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1719904417431--0.23434882756402398image.webp&w=1920&q=75",
-      image4:
+    image4:
       "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
     title: "90,000 Դ",
   },
@@ -302,7 +333,7 @@ export let dataBase2 = [
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1733690961421--0.3667171563938947image.webp&w=1920&q=75",
     image3:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1733690961447--0.38353416019803177image.webp&w=1920&q=75",
-      image4:
+    image4:
       "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
     title: "100,000 Դ",
   },
@@ -315,7 +346,7 @@ export let dataBase2 = [
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1712567462746--0.3136007336572648image.webp&w=1920&q=75",
     image3:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1712567462749--0.38886628944383816image.webp&w=1920&q=75",
-      image4:
+    image4:
       "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
     title: "80,000 Դ",
   },
@@ -328,7 +359,7 @@ export let dataBase2 = [
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1726755455665--0.9767541947953513image.webp&w=1920&q=75",
     image3:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1718628350198--0.58103336918447image.webp&w=1920&q=75",
-      image4:
+    image4:
       "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
     title: "100,000 Դ",
   },
@@ -341,7 +372,7 @@ export let dataBase2 = [
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1720431645286--0.9281730204740335image.webp&w=1920&q=75",
     image3:
       "https://amaranoc.am/_next/image?url=https%3A%2F%2Fapi.amaranoc.am%2Fcompressed_images%2Fcompressed_1720431645298--0.1531032070465983image.webp&w=1920&q=75",
-      image4:
+    image4:
       "https://cdn.pixabay.com/photo/2016/02/04/11/57/heart-1179054_1280.png",
     title: "100,000 Դ",
   },
@@ -354,16 +385,12 @@ export const dataRegion = [
   { text: "Դիլիջան", id: 1 },
   { text: "Ծաղկաձոր", id: 2 },
   { text: "Երևան", id: 3 },
+  { text: "Աշտարակ", id: 7 },
   { text: "Ձորաղբյուր", id: 4 },
   { text: "Արզնի", id: 5 },
-  { text: "Ջրվեժ", id: 6 },
-  { text: "Աշտարակ", id: 7 },
-  { text: "Նոր Հաճն", id: 8 },
   { text: "Աբովյան", id: 9 },
   { text: "Պտղնի", id: 10 },
-  { text: "Սևան", id: 11 },
   { text: "Քասախ", id: 12 },
-  { text: "Զովունի", id: 13 },
   { text: "Օհանավան", id: 14 },
 ];
 export const dataFeatures = [
@@ -506,6 +533,7 @@ export let dataTesak = [
     price: "60,000 ֏",
   },
 ];
+
 
 export let dataImg = [
   {

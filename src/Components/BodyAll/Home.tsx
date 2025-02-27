@@ -1,10 +1,60 @@
+// import React from "react";
+// import { data } from "../Data/DataBase";
+// import "../BodyAll/filter.css";
+
+// interface DataItem {
+//   id: number;
+//   url: string;
+//   text: string;
+// }
+
+// interface HomeProps {
+//   setSelectedRegion: (region: string | null) => void;
+// }
+
+// const Home: React.FC<HomeProps> = ({ setSelectedRegion }) => {
+//   const handleClick = (el: DataItem) => {
+//     setSelectedRegion(el.text); 
+//   };
+
+//   return (
+//     <>
+//       <hr />
+//       <div className="hidden sm:block">
+//         <div className="flex justify-evenly mt-[10px] flex-wrap gap-[200px] sm:gap-12">
+//           {data.map((el) => (
+//             <div key={el.id} className="flex flex-col items-center w-20 sm:w-24 md:w-20">
+//               <img
+//                 src={el.url}
+//                 alt={el.text}
+//                 className="image rounded-lg w-20 h-20 sm:w-10 sm:h-10 md:w-10 md:h-10 cursor-pointer"
+//                 onClick={() => handleClick(el)}
+//               />
+//               <p className="text-black text-center mt-2 sm:text-sm md:text-base">
+//                 {el.text}
+//               </p>
+//             </div>
+//           ))}
+//           <i
+//             className="fa fa-arrow-right mt-9 h-10 rounded-2xl border-2 border-gray-300 p-1"
+//             style={{ fontSize: "24px" }}
+//           ></i>
+//         </div>
+//         <hr />
+//       </div>
+//     </>
+//   );
+// };
+
+// export default Home;
+
+
 import React, { useState } from "react";
-import { data, dataImg, dataImg2, dataImg3, dataImg4, dataImg5,  } from "../Data/DataBase";
+import { data, dataImg, dataImg2, dataImg3, dataImg4, dataImg5,dataImg6  } from "../Data/DataBase";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../BodyAll/filter.css";
 
-// Տիպավորում տվյալների համար
 interface DataItem {
   id: number;
   url: string;
@@ -18,7 +68,7 @@ interface ImgItem {
   title: string;
 }
 
-// Համալիրության տիպավորում
+
 const Home: React.FC = () => {
   const [img, setImg] = useState<ImgItem[]>([]);
 
@@ -33,6 +83,8 @@ const Home: React.FC = () => {
       setImg(dataImg4);
     } else if (el.id === data[4].id) {
       setImg(dataImg5);
+    }else if (el.id === data[5].id) {
+      setImg(dataImg6);
     } else {
       setImg([]);
     }

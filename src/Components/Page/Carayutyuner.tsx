@@ -21,6 +21,7 @@ interface ItemTesak {
 const Carayutyuner: React.FC = () => {
   return (
     <>
+    <TopHeader/>
       <hr className="mt-[50px]" />
       <div className="flex justify-evenly mt-10 flex-wrap gap-1 sm:gap-12">
         {dataCara.map((el: ItemCara) => (
